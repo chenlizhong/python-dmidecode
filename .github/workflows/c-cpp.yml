@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: list current folder
+      run: ls -l
     - name: make
       run: make
 
