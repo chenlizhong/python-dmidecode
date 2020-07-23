@@ -16,9 +16,9 @@ jobs:
     - name: list current folder
       run: ls -l
     - name: install libxml2
-      run: apt-get install libxml2-dev
+      run: sudo apt-get -y install libxml2-dev
     - name: install python-libxml2
-      run: pip install python-libxml2
+      run: sudo apt-get -y install python-libxml2
     - name: make
       run: make
 
