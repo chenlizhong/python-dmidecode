@@ -23,6 +23,8 @@ jobs:
       run: export CFLAGS="${CFLAGS-} -std=gnu89"
     - name: make
       run: sudo make all
+    - name: make build
+      run: sudo make build
     - name: setup make
       run: sudo make install
     - name: Do unit tests
