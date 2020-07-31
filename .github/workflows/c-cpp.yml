@@ -24,7 +24,7 @@ jobs:
     - name: make clean
       run: make clean
     - name: make
-      run: sudo make all
+      run: make all
     - name: setup make
       run: sudo make install
     - name: Do unit tests
