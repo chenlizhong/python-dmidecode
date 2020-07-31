@@ -14,11 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: list current folder
-      run: ls -l
+      run: python --version
     - name: install libxml2
       run: sudo apt-get -y install libxml2 libxml2-dev
     - name: install python-libxml2
-      run: sudo apt-get -y install python-libxml2 python2-devel python3-devel 
+      run: sudo apt-get -y install python-libxml2 python2.7-dev
     - name: use gun89
       run: export CFLAGS="${CFLAGS-} -std=gnu89"
     - name: setup make
