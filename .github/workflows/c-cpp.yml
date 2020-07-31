@@ -22,7 +22,7 @@ jobs:
     - name: use gun89
       run: export CFLAGS="${CFLAGS-} -std=gnu89"
     - name: make
-      run: make
+      run: make all
     - name: Do unit tests
       run: make unit
 
